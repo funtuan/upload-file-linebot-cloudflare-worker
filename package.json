@@ -1,0 +1,21 @@
+{
+	"name": "upload-file-linebot-cloudflare-worker",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "npx wrangler deploy index.js",
+		"dev": "npx wrangler dev index.js --local",
+		"start-stackblitz": "WRANGLER_SEND_METRICS=false wrangler dev index.js --local",
+		"test": "vitest"
+	},
+	"dependencies": {
+		"axios": "^1.5.0",
+		"cheerio": "^1.0.0-rc.12",
+		"crypto": "^1.0.1",
+		"itty-router": "^2.6.1"
+	},
+	"devDependencies": {
+		"vitest": "^0.31.0",
+		"wrangler": "^3.0.0"
+	}
+}
