@@ -1,26 +1,15 @@
-## Template: worker-router
+# 超商檔案列印小幫手
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/worker-router)
+「超商檔案列印小幫手」是一個 LINE bot 的應用，可以協助使用者將檔案上傳至超商，取得超商列印編號，並發送給使用者，使其前往 ibon 列印。
 
-This template demonstrates using the [`itty-router`](https://github.com/kwhitley/itty-router) package to add routing to your Cloudflare Workers.
+## 如何使用
 
-[`index.js`](https://github.com/cloudflare/worker-template-router/blob/master/index.js) is the content of the Workers script.
+1. 將「超商檔案列印小幫手」加入 LINE 好友，ID:@fua2204f
+2. 傳送檔案給「超商檔案列印小幫手」
+3. 等待「超商檔案列印小幫手」回覆，取得超商列印編號
+4. 前往 ibon 列印，並輸入超商列印編號
 
-## Setup
-
-To create a `my-project` directory using this template, run:
-
-```sh
-$ npx wrangler generate my-project worker
-# or
-$ yarn wrangler generate my-project worker
-# or
-$ pnpm wrangler generate my-project worker
-```
-
-Before publishing your code you need to edit `wrangler.toml` file and add your Cloudflare `account_id` - more information about configuring and publishing your code can be found [in the documentation](https://developers.cloudflare.com/workers/learning/getting-started).
-
-Once you are ready, you can publish your code by running the following command:
+## 如何部署
 
 ```sh
 $ npm run deploy
@@ -29,3 +18,7 @@ $ yarn run deploy
 # or
 $ pnpm run deploy
 ```
+
+## license
+
+This project is licensed under the MIT License
