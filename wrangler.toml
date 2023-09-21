@@ -1,0 +1,22 @@
+name = "upload-file-linebot"
+main = "index.js"
+compatibility_date = "2022-05-03"
+node_compat = true
+
+kv_namespaces = [
+  { binding = "RECORD", id = "0f1727c1e9384a81bf2c2ebad3a101bc" }
+]
+
+[dev]
+port = 8787
+
+[[queues.producers]]
+  queue = "upload-file-linebot"
+  binding = "LINEBOT_EVENT_QUEUE"
+
+[[queues.consumers]]
+  queue = "upload-file-linebot"
+  max_batch_size = 1
+  max_batch_timeout = 1
+  max_retries = 0
+  max_concurrency = 10
